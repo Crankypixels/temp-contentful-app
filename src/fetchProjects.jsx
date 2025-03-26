@@ -18,7 +18,7 @@ export const useFetchProjects = () => {
         const { title, url, image, orderID } = item.fields;
         const id = item.sys.id;
         const img =
-          image?.fields?.file?.url + '?fm=jpg&fl=progressive&w=352&h=240';
+          image?.fields?.file?.url + '?fm=jpg&fl=progressive&w=704&h=480';
         return { title, url, id, img, orderID };
       });
       setProjects(projects);
